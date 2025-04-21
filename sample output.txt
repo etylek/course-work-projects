@@ -1,0 +1,243 @@
+User logs loaded successfully!
+User emails loaded successfully!
+
+Enter your email:
+testing@gmail.com
+User emails saved successfully!
+
+Inventory Management System:
+1. Add Item
+2. View Inventory
+3. Update Item
+4. Remove Item
+5. Export Data
+6. Import Data
+7. Generate Report
+8. Exit
+Choose an option: 1
+Enter ID: 6
+Enter Name: Orange Juice
+Enter Quantity: 30
+Enter Price: 30
+Item added successfully!
+
+Inventory Management System:
+1. Add Item
+2. View Inventory
+3. Update Item
+4. Remove Item
+5. Export Data
+6. Import Data
+7. Generate Report
+8. Exit
+Choose an option: 2
+ID: 1, Name: Mop, Quantity: 25, Price: 50.0 soms.
+ID: 2, Name: Cloth, Quantity: 57, Price: 25.0 soms.
+ID: 101, Name: Bread, Quantity: 20, Price: 30.0 soms.
+ID: 100, Name: Water Bottle, Quantity: 30, Price: 25.0 soms.
+ID: 4, Name: Milky, Quantity: 30, Price: 60.0 soms.
+ID: 6, Name: Orange Juice, Quantity: 30, Price: 30.0 soms.
+
+Inventory Management System:
+1. Add Item
+2. View Inventory
+3. Update Item
+4. Remove Item
+5. Export Data
+6. Import Data
+7. Generate Report
+8. Exit
+Choose an option: 3
+Enter ID of the item to update: 1
+Enter New Name: Paper
+Enter New Quantity: 10
+Enter New Price: 120
+Item updated successfully!
+
+Inventory Management System:
+1. Add Item
+2. View Inventory
+3. Update Item
+4. Remove Item
+5. Export Data
+6. Import Data
+7. Generate Report
+8. Exit
+Choose an option: 2
+ID: 1, Name: Paper, Quantity: 10, Price: 120.0 soms.
+ID: 2, Name: Cloth, Quantity: 57, Price: 25.0 soms.
+ID: 101, Name: Bread, Quantity: 20, Price: 30.0 soms.
+ID: 100, Name: Water Bottle, Quantity: 30, Price: 25.0 soms.
+ID: 4, Name: Milky, Quantity: 30, Price: 60.0 soms.
+ID: 6, Name: Orange Juice, Quantity: 30, Price: 30.0 soms.
+
+Inventory Management System:
+1. Add Item
+2. View Inventory
+3. Update Item
+4. Remove Item
+5. Export Data
+6. Import Data
+7. Generate Report
+8. Exit
+Choose an option: 4
+Enter ID of the item to remove: 4
+Item removed successfully!
+
+Inventory Management System:
+1. Add Item
+2. View Inventory
+3. Update Item
+4. Remove Item
+5. Export Data
+6. Import Data
+7. Generate Report
+8. Exit
+Choose an option: 2
+ID: 1, Name: Paper, Quantity: 10, Price: 120.0 soms.
+ID: 2, Name: Cloth, Quantity: 57, Price: 25.0 soms.
+ID: 101, Name: Bread, Quantity: 20, Price: 30.0 soms.
+ID: 100, Name: Water Bottle, Quantity: 30, Price: 25.0 soms.
+ID: 6, Name: Orange Juice, Quantity: 30, Price: 30.0 soms.
+
+Inventory Management System:
+1. Add Item
+2. View Inventory
+3. Update Item
+4. Remove Item
+5. Export Data
+6. Import Data
+7. Generate Report
+8. Exit
+Choose an option: 5
+Choose export format: 
+1. CSV
+2. JSON
+1
+Data exported to CSV successfully!
+
+Inventory Management System:
+1. Add Item
+2. View Inventory
+3. Update Item
+4. Remove Item
+5. Export Data
+6. Import Data
+7. Generate Report
+8. Exit
+Choose an option: 6
+Choose import format: 
+1. CSV
+2. JSON
+2
+Data imported from JSON successfully!
+
+Inventory Management System:
+1. Add Item
+2. View Inventory
+3. Update Item
+4. Remove Item
+5. Export Data
+6. Import Data
+7. Generate Report
+8. Exit
+Choose an option: 2
+ID: 101, Name: Bread, Quantity: 20, Price: 30.0 soms.
+ID: 6, Name: Orange Juice, Quantity: 30, Price: 30.0 soms.
+ID: 4, Name: Milky, Quantity: 30, Price: 60.0 soms.
+
+Inventory Management System:
+1. Add Item
+2. View Inventory
+3. Update Item
+4. Remove Item
+5. Export Data
+6. Import Data
+7. Generate Report
+8. Exit
+Choose an option: 4
+Enter ID of the item to remove: 101
+Item removed successfully!
+
+Inventory Management System:
+1. Add Item
+2. View Inventory
+3. Update Item
+4. Remove Item
+5. Export Data
+6. Import Data
+7. Generate Report
+8. Exit
+Choose an option: 2
+ID: 6, Name: Orange Juice, Quantity: 30, Price: 30.0 soms.
+ID: 4, Name: Milky, Quantity: 30, Price: 60.0 soms.
+
+Inventory Management System:
+1. Add Item
+2. View Inventory
+3. Update Item
+4. Remove Item
+5. Export Data
+6. Import Data
+7. Generate Report
+8. Exit
+Choose an option: 7
+
+User Activity Report:
+Email & Action: user2@gmail.com : 5, Count: 1
+Email & Action: freddy@gmail.com : 2, Count: 1
+Email & Action: user2@gmail.com : 2, Count: 1
+Email & Action: user2@gmail.com : 8, Count: 1
+Email & Action: user2@gmail.com : 7, Count: 1
+Email & Action: fedro@gmail.com : 2, Count: 1
+Email & Action: user5@gmail.com : 8, Count: 1
+Email & Action: user5@gmail.com : 7, Count: 1
+Email & Action: user5@gmail.com : 2, Count: 1
+Email & Action: user7@gmail.com : 7, Count: 2
+Email & Action: user7@gmail.com : 8, Count: 1
+Email & Action: hopefullylast@gmail.com : 8, Count: 1
+Email & Action: hopefullylast@gmail.com : 7, Count: 1
+Email & Action: user1@gmail.com : 8, Count: 1
+Email & Action: user1@gmail.com : 7, Count: 1
+Email & Action: hopefullylast@gmail.com : 2, Count: 1
+Email & Action: user1@gmail.com : 2, Count: 2
+Email & Action: testing@gmail.com : 7, Count: 1
+Email & Action: fedro@gmail.com : 8, Count: 1
+Email & Action: testing@gmail.com : 5, Count: 1
+Email & Action: fedro@gmail.com : 7, Count: 1
+Email & Action: testing@gmail.com : 6, Count: 1
+Email & Action: user1@gmail.com : 3, Count: 1
+Email & Action: testing@gmail.com : 3, Count: 1
+Email & Action: testing@gmail.com : 4, Count: 5
+Email & Action: testing@gmail.com : 1, Count: 1
+Email & Action: testing@gmail.com : 2, Count: 5
+Email & Action: freddy@gmail.com : 8, Count: 1
+Email & Action: freddy@gmail.com : 7, Count: 1
+
+Most Frequent Actions:
+Action:  2, Count: 12
+Action:  7, Count: 9
+Action:  8, Count: 7
+Action:  4, Count: 5
+Action:  3, Count: 2
+Action:  5, Count: 2
+Action:  1, Count: 1
+Action:  6, Count: 1
+
+Total Number of Users: 6
+
+Inventory Management System:
+1. Add Item
+2. View Inventory
+3. Update Item
+4. Remove Item
+5. Export Data
+6. Import Data
+7. Generate Report
+8. Exit
+Choose an option: 8
+User logs saved successfully!
+User emails saved successfully!
+Exiting. Goodbye!
+
+Process finished with exit code 0
