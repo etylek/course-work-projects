@@ -10,7 +10,7 @@ class InventoryItem {
     private String name;
     private int quantity;
     private double price;
-    private int userId; // Add user ID for added/updated items
+    private int userId;
 
     public InventoryItem() {}
 
@@ -114,7 +114,7 @@ public class Main {
 
             try {
                 int choice = scanner.nextInt();
-                scanner.nextLine(); // Clear buffer
+                scanner.nextLine();
                 trackUserAction(email, choice);
 
                 switch (choice) {
@@ -128,7 +128,7 @@ public class Main {
                     case 8 -> {
                         saveInventoryToJSON();
                         saveUserLogs();
-                        saveUserEmails(); // Save emails before exiting
+                        saveUserEmails();
                         System.out.println("Exiting. Goodbye!");
                         return;
                     }
@@ -140,7 +140,7 @@ public class Main {
             }
         }
     }
-    private static void loadUserEmails() {
+    public static void loadUserEmails() {
         try (Scanner fileScanner = new Scanner(new File(EMAIL_FILE_PATH))) {
             while (fileScanner.hasNextLine()) {
                 String email = fileScanner.nextLine().trim();
@@ -154,7 +154,7 @@ public class Main {
         }
     }
 
-    private static void saveUserEmails() {
+    public static void saveUserEmails() {
         try (FileWriter writer = new FileWriter(EMAIL_FILE_PATH)) {
             for (String email : userData.keySet()) {
                 writer.write(email + "\n");
@@ -165,13 +165,12 @@ public class Main {
         }
     }
 
-    private static void trackUserAction(String email, int action) {
+    public static void trackUserAction(String email, int action) {
         String actionKey = email + " : " + action;
         userActions.put(actionKey, userActions.getOrDefault(actionKey, 0) + 1);
     }
 
-    // Load inventory from JSON
-    private static void loadInventoryFromJSON() {
+    public static void loadInventoryFromJSON() {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             File file = new File(JSON_FILE_PATH);
@@ -186,8 +185,7 @@ public class Main {
         }
     }
 
-    // Save inventory to JSON
-    private static void saveInventoryToJSON() {
+    public static void saveInventoryToJSON() {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             objectMapper.writeValue(new File(JSON_FILE_PATH), inventory);
@@ -196,8 +194,7 @@ public class Main {
         }
     }
 
-    // Export data to CSV or JSON
-    private static void exportData(Scanner scanner) {
+    public static void exportData(Scanner scanner) {
         System.out.println("Choose export format: ");
         System.out.println("1. CSV");
         System.out.println("2. JSON");
@@ -213,7 +210,7 @@ public class Main {
         }
     }
 
-    private static void exportToCSV() {
+    public static void exportToCSV() {
         try (FileWriter writer = new FileWriter(CSV_FILE_PATH)) {
             for (InventoryItem item : inventory) {
                 writer.write(item.toCSV() + '\n');
@@ -224,8 +221,7 @@ public class Main {
         }
     }
 
-    // Import data from CSV or JSON
-    private static void importData(Scanner scanner) {
+    public static void importData(Scanner scanner) {
         System.out.println("Choose import format: ");
         System.out.println("1. CSV");
         System.out.println("2. JSON");
@@ -241,9 +237,9 @@ public class Main {
         }
     }
 
-    private static void importFromCSV() {
+    public static void importFromCSV() {
         try (Scanner fileScanner = new Scanner(new File(CSV_FILE_PATH))) {
-            inventory.clear(); // Clear current inventory
+            inventory.clear();
             while (fileScanner.hasNextLine()) {
                 String[] data = fileScanner.nextLine().split(",");
                 if (data.length < 5) {
@@ -257,7 +253,7 @@ public class Main {
                 double price = Double.parseDouble(data[3]);
                 int userId = Integer.parseInt(data[4]); // Extract userId from CSV
 
-                inventory.add(new InventoryItem(id, name, quantity, price, userId)); // Add item with userId
+                inventory.add(new InventoryItem(id, name, quantity, price, userId));
             }
             System.out.println("Data imported from CSV successfully!");
         } catch (FileNotFoundException e) {
@@ -267,7 +263,7 @@ public class Main {
         }
     }
 
-    private static void addItem(Scanner scanner, int userId) {
+    public static void addItem(Scanner scanner, int userId) {
         try {
             System.out.print("Enter ID: ");
             int id = scanner.nextInt();
@@ -287,7 +283,7 @@ public class Main {
         }
     }
 
-    private static void viewInventory() {
+    public static void viewInventory() {
         if (inventory.isEmpty()) {
             System.out.println("Inventory is empty.");
         } else {
@@ -297,7 +293,7 @@ public class Main {
         }
     }
 
-    private static void updateItem(Scanner scanner, int userId) {
+    public static void updateItem(Scanner scanner, int userId) {
         try {
             System.out.print("Enter ID of the item to update: ");
             int id = scanner.nextInt();
@@ -328,7 +324,7 @@ public class Main {
         }
     }
 
-    private static void removeItem(Scanner scanner) {
+    public static void removeItem(Scanner scanner) {
         try {
             System.out.print("Enter ID of the item to remove: ");
             int id = scanner.nextInt();
@@ -343,7 +339,7 @@ public class Main {
         }
     }
 
-    private static void loadUserLogs() {
+    public static void loadUserLogs() {
         try (Scanner fileScanner = new Scanner(new File(USER_LOG_FILE_PATH))) {
             if (fileScanner.hasNextLine()) {
                 fileScanner.nextLine(); // Skip header row
@@ -369,7 +365,7 @@ public class Main {
         }
     }
 
-    private static void saveUserLogs() {
+    public static void saveUserLogs() {
         try (FileWriter writer = new FileWriter(USER_LOG_FILE_PATH)) {
             writer.write("Email,Action,Count\n");
             for (Map.Entry<String, Integer> entry : userActions.entrySet()) {
@@ -384,7 +380,7 @@ public class Main {
         }
     }
 
-    private static void generateReport() {
+    public static void generateReport() {
         System.out.println("\nUser Activity Report:");
         HashMap<String, Integer> actionCount = new HashMap<>();
 
