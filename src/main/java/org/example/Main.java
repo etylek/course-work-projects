@@ -401,6 +401,5 @@ public class Main {
                 .forEach(entry -> System.out.println("Action: " + entry.getKey() + ", Count: " + entry.getValue()));
 
         System.out.println("\nTotal Number of Users: " + userData.size()); // Total unique users
-        System.out.println(userData); //DELETE THIS
     }
 }
