@@ -16,6 +16,11 @@ The Inventory Management System simplifies inventory operations and user activit
 
 ---
 
+## Presentation
+https://docs.google.com/presentation/d/1-bFOPfam9f6HheQGshqoXyHEXVJeB7Ua9OY6yj-BaYs/edit#slide=id.ge7f9c668d6_0_23 
+
+---
+
 ## Objectives
 - To create a reliable and user-friendly inventory management system.
 - To ensure traceability and accountability by tracking user actions.
